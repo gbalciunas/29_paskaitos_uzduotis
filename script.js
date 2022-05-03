@@ -72,7 +72,7 @@ console.log(countrys[0].population) */
 
 // 3 variantas
 
-/* function countrysPopul(x){
+ function countrysPopul(x){
 
 
     var populMln = (x.population / 1000000).toFixed(2)
@@ -87,10 +87,10 @@ for(const x of countrys){
     countrysPopul(x)
 }
 
-*/
+
 
 // 4 variantas
-
+/*
  function countrysPopul(country, area, population){
 
 
@@ -106,7 +106,7 @@ for(var x of countrys){
     countrysPopul(x.country, x.area, x.population)
 }
 
-
+*/
 
 /* Šalis: Portugalija, joje gyvena 10.26 mln. gyventojų.
 Valstybės plotas: 92212 km², plotas tenkantis vienam gyventojui: 8987.52 m² */
