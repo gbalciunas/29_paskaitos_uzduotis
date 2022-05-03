@@ -72,7 +72,7 @@ console.log(countrys[0].population) */
 
 // 3 variantas
 
-function countrysPopul(){
+/* function countrysPopul(){
 
 
     var populMln = (x.population / 1000000).toFixed(2)
@@ -87,10 +87,24 @@ for(var x of countrys){
     countrysPopul()
 }
 
+*/
+
+// 4 variantas
+
+function countrysPopul(country, area, population){
 
 
+    var populMln = (population / 1000000).toFixed(2)
+    var areaPer = ((area / population) * 1000000).toFixed(2)
 
+    console.log(`Šalis: ${country}, joje gyvena ${populMln} mln. gyventojų.`)
+    console.log(`Valstybės plotas: ${area} km², plotas tenkantis vienam gyventojui: ${areaPer} m².`)
+    console.log('#############################################')
+} 
 
+for(var x of countrys){
+    countrysPopul(x.country, x.area, x.population)
+}
 
 
 
