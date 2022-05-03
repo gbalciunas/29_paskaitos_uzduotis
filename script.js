@@ -43,8 +43,12 @@ console.log(countrys[0].population) */
 } */
 
  for(var x of countrys){
-    console.log(`Šalis: ${x.country}, joje gyvena ${(x.population / 1000000).toFixed(2)} mln. gyventojų.`)
-    console.log(`Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${((x.area / x.population) * 1000000).toFixed(2)} m².`)
+
+    var populMln = (x.population / 1000000).toFixed(2)
+    var areaPer = ((x.area / x.population) * 1000000).toFixed(2)
+
+    console.log(`Šalis: ${x.country}, joje gyvena ${populMln} mln. gyventojų.`)
+    console.log(`Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${areaPer} m².`)
     console.log('#############################################')
 } 
 
