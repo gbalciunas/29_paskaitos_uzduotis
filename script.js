@@ -72,7 +72,7 @@ console.log(countrys[0].population) */
 
 // 3 variantas
 
-/* function countrysPopul(){
+ function countrysPopul(){
 
 
     var populMln = (x.population / 1000000).toFixed(2)
@@ -87,11 +87,11 @@ for(var x of countrys){
     countrysPopul()
 }
 
-*/
+
 
 // 4 variantas
 
-function countrysPopul(country, area, population){
+/* function countrysPopul(country, area, population){
 
 
     var populMln = (population / 1000000).toFixed(2)
@@ -105,7 +105,7 @@ function countrysPopul(country, area, population){
 for(var x of countrys){
     countrysPopul(x.country, x.area, x.population)
 }
-
+*/
 
 
 /* Šalis: Portugalija, joje gyvena 10.26 mln. gyventojų.
