@@ -38,9 +38,9 @@ console.log(countrys[0].population) */
 
 
 
- for(var x of countrys){
-    console.log(x.country, x.area, x.population)
-} 
+ /* for(var x of countrys){
+    console.log(x.country, x.area, x.population) 
+} */
 
  for(var x of countrys){
     console.log(`Šalis: ${x.country}, joje gyvena ${(x.population / 1000000).toFixed(2)} mln. gyventojų.`)
