@@ -57,7 +57,7 @@ console.log(countrys[0].population) */
 
 // 2 variantas 
 
- for(var x of countrys){
+ /*for(var x of countrys){
 
     var populMln = (x.population / 1000000).toFixed(2)
     var areaPer = ((x.area / x.population) * 1000000).toFixed(2)
@@ -66,6 +66,32 @@ console.log(countrys[0].population) */
     console.log(`Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${areaPer} m².`)
     console.log('#############################################')
 } 
+
+*/
+
+
+// 3 variantas
+
+function countrysPopul(){
+
+
+    var populMln = (x.population / 1000000).toFixed(2)
+    var areaPer = ((x.area / x.population) * 1000000).toFixed(2)
+
+    console.log(`Šalis: ${x.country}, joje gyvena ${populMln} mln. gyventojų.`)
+    console.log(`Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${areaPer} m².`)
+    console.log('#############################################')
+} 
+
+for(var x of countrys){
+    countrysPopul()
+}
+
+
+
+
+
+
 
 
 /* Šalis: Portugalija, joje gyvena 10.26 mln. gyventojų.
